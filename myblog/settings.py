@@ -121,6 +121,12 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
+STATICFILES_DIRS = [
+    
+    BASE_DIR / 'myblog/static/'
+
+]#добавили
+STATIC_ROOT = BASE_DIR / 'static' #добавлили
 STATIC_URL = 'static/'
 
 # Default primary key field type
@@ -128,8 +134,8 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-MEDIA_ROOT = BASE_DIR / 'media'
-MEDIA_URL = '/awesome_media/'
+MEDIA_ROOT = BASE_DIR / 'media' #добавили
+MEDIA_URL = '/awesome_media/' #добавили
 
 
 # os.path.join(BASE_DIR / 'db.sqlite3)
