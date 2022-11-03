@@ -9,3 +9,7 @@ class Post(models.Model):
 
 	def get_summary(self):#создаём функцию - для получения краткой сводуки
 		return self.text[:70]#вернёт только 70 символов из текста
+
+
+	def __str__(self):#в админке будет выводить имя поста место postobjects(1)
+		return self.title
